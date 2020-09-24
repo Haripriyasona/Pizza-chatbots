@@ -1,0 +1,57 @@
+intents:
+  - greet
+  - pizza_order
+  - veg_nonveg
+  - type
+  - toppings
+  - first_name
+  - goodbye
+  - mood_affirm
+  - mood_deny
+  - mood_great
+  - mood_unhappy
+
+Slots:
+  name:
+    type: text
+    auto_fill: False
+
+
+actions:
+- utter_greet
+- utter_pizza
+- utter_veg_nonveg
+- utter_type
+- utter_toppings
+- utter_first_name
+- utter_cheer_up
+- utter_did_that_help
+- utter_happy
+- utter_goodbye
+- action_name
+
+templates:
+  utter_greet:
+  - text: "Hello,Welcome to YOYO pizza!.what would you like to have?"
+  utter_pizza:
+  - text: "what pizza you want? veg or non veg?"
+  utter_veg_nonveg:
+  - text: "what type of pizza you want? 1.margerita 2.farmhouse 3.mexican pizza"
+  utter_type:
+  - text: "what toppings you would like to have? 1.cheesy 2.double cheese 3.sausage"
+  utter_toppings:
+  - text: "Sure.Your order is confirmed.Can u please give your name  ?"
+  utter_first_name:
+  - text: "Thank You.Your order will reach you soon,Your order ID is 12345."
+  utter_cheer_up:
+  - text: "Here is something to cheer you up:"
+    image: "https://i.imgur.com/nGF1K8f.jpg"
+
+  utter_did_that_help:
+  - text: "Did that help you?"
+
+  utter_happy:
+  - text: "Great carry on!"
+
+  utter_goodbye:
+  - text: "Bye,Thank you for contacting YOYO pizza"
